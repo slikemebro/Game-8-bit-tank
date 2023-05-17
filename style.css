@@ -1,0 +1,95 @@
+#game-container {
+    width: 260px;
+    height: 260px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#loading-bar-container {
+    width: 70px;
+    height: 10px;
+    background-color: #009b4d;
+}
+
+#loading-bar {
+    width: 0;
+    height: 100%;
+    background-color: #8f2409;
+    transition: width 3s;
+}
+
+
+#sidebar {
+    position: absolute;
+    top: 0;
+    right: -110px;
+    width: 70px;
+    height: 220px;
+    background-color: #ccc;
+    padding: 20px;
+    
+}
+
+
+#sidebar h2 {
+    margin-top: 0;
+}
+
+#sidebar p {
+    margin-bottom: 0;
+}
+
+#tank {
+    width: 19px;
+    height: 19px;
+    /* background-color: #f00; */
+    background-image: url(./images/tank.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 240px;
+    left: 120px;
+    transform: rotate(0deg);
+}
+
+.bulletTop {
+    width: 5px;
+    height: 10px;
+    background-color: #0f0;
+    position: absolute;
+}
+
+.bulletLeft {
+    width: 10px;
+    height: 5px;
+    background-color: #0f0;
+    position: absolute;
+}
+
+
+.obstacle {
+    width: 19px;
+    height: 19px;
+    /* background-color: brown; цвет стен*/
+    background-image: url(./images/kirpich.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.obstacle.breakable {
+    /* background-color: green; Цвет разрушаемых блоков */
+    background-image: url(./images/trava.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+sdlssd {
+    background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;
+}

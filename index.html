@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>8-битные танки</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: aqua;">
+    <div id="game-container">
+
+        <div id="sidebar">
+            <h3>Патрони</h3>
+            <p id="bulletsCounter">
+                <img id="firstBullet" src="./images/bull.png" width="20" height="30">
+                <img id="secondBullet" src="./images/bull.png" width="20" height="30">
+                <img id="thirdBullet" src="./images/bull.png" width="20" height="30">
+            </p>
+            <div id="loading-bar-container">
+                <div id="loading-bar"></div>
+            </div>
+        </div>
+    
+        <div id="tank"></div>
+
+        <div class="obstacle", style="top: 240px; left: 20px;"></div>
+        <div class="obstacle", style="top: 220px; left: 20px;"></div>
+        <div class="obstacle", style="top: 200px; left: 20px;"></div>
+        <div class="obstacle", style="top: 180px; left: 20px;"></div>
+        <div class="obstacle", style="top: 160px; left: 20px;"></div>
+
+        <div class="obstacle breakable", style="top: 160px; left: 0px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+
+        <div class="obstacle", style="top: 240px; left: 60px;"></div>
+        <div class="obstacle", style="top: 200px; left: 60px;"></div>
+        <div class="obstacle", style="top: 180px; left: 60px;"></div>
+        <div class="obstacle breakable", style="top: 160px; left: 60px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="obstacle breakable", style="top: 140px; left: 60px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="obstacle", style="top: 120px; left: 60px;"></div>
+        
+        <div class="obstacle", style="top: 120px; left: 40px;"></div>
+        <div class="obstacle", style="top: 120px; left: 20px;"></div>
+
+        <div class="obstacle breakable", style="top: 100px; left: 20px;"></div>
+        <div class="obstacle breakable", style="top: 100px; left: 0px;"></div>
+        <div class="obstacle breakable", style="top: 80px; left: 0px;"></div>
+
+        <div class="obstacle breakable", style="top: 140px; left: 80px;"></div>
+        <div class="obstacle breakable", style="top: 120px; left: 80px;"></div>
+        <div class="obstacle breakable", style="top: 120px; left: 100px;"></div>
+        <div class="obstacle breakable", style="top: 120px; left: 120px;"></div>
+        <div class="obstacle breakable", style="top: 120px; left: 140px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+
+        <div class="obstacle", style="top: 100px; left: 100px;"></div>
+        <div class="obstacle", style="top: 120px; left: 100px;"></div>
+        <div class="obstacle", style="top: 160px; left: 100px;"></div>
+        <div class="obstacle", style="top: 180px; left: 100px;"></div>
+        <div class="obstacle", style="top: 200px; left: 100px;"></div>
+
+        <div class="obstacle", style="top: 180px; left: 120px;"></div>
+        <div class="obstacle", style="top: 200px; left: 120px;"></div>
+
+        <div class="obstacle", style="top: 140px; left: 140px;"></div>
+        <div class="obstacle", style="top: 160px; left: 140px;"></div>
+        <div class="obstacle", style="top: 180px; left: 140px;"></div>
+        <div class="obstacle", style="top: 200px; left: 140px;"></div>
+
+        <div class="obstacle", style="top: 220px; left: 180px;"></div>
+        <div class="obstacle", style="top: 240px; left: 180px;"></div>
+
+        <div class="obstacle", style="top: 240px; left: 200px;"></div>
+        
+        <div class="obstacle", style="top: 220px; left: 220px;"></div>
+        <div class="obstacle", style="top: 240px; left: 220px;"></div>
+
+        <div class="obstacle", style="top: 180px; left: 180px;"></div>
+        <div class="obstacle breakable", style="top: 180px; left: 200px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="obstacle", style="top: 180px; left: 220px;"></div>
+        
+        <div class="obstacle", style="top: 140px; left: 180px;"></div>
+        <div class="obstacle", style="top: 160px; left: 220px;"></div>
+        <div class="obstacle", style="top: 140px; left: 220px;"></div>
+        <div class="obstacle", style="top: 120px; left: 220px;"></div>
+
+        <div class="obstacle breakable", style="top: 120px; left: 200px;"></div>
+        <div class="obstacle breakable", style="top: 100px; left: 200px;"></div>
+        <div class="obstacle breakable", style="top: 80px; left: 200px;"></div>
+        <div class="obstacle breakable", style="top: 80px; left: 240px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+
+        <div class="obstacle", style="top: 80px; left: 220px;"></div>
+        <div class="obstacle", style="top: 80px; left: 180px;"></div>
+
+        <div class="obstacle breakable", style="top: 60px; left: 180px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="obstacle breakable", style="top: 40px; left: 200px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+
+        <div class="obstacle", style="top: 20px; left: 180px;"></div>
+        <div class="obstacle", style="top: 40px; left: 180px;"></div>
+        <div class="obstacle", style="top: 20px; left: 220px;"></div>
+        <div class="obstacle", style="top: 40px; left: 220px;"></div>
+
+        <div class="obstacle breakable", style="top: 0px; left: 140px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="obstacle", style="top: 20px; left: 140px;"></div>
+        <div class="obstacle", style="top: 40px; left: 140px;"></div>
+        <div class="obstacle", style="top: 40px; left: 120px;"></div>
+
+        <div class="obstacle breakable", style="top: 80px; left: 120px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+
+        <div class="obstacle breakable", style="top: 0px; left: 60px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+        <div class="obstacle breakable", style="top: 20px; left: 60px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+
+        <div class="obstacle", style="top: 60px; left: 60px;"></div>
+        <div class="obstacle", style="top: 80px; left: 60px;"></div>
+
+        <div class="obstacle", style="top: 20px; left: 20px;"></div>
+        <div class="obstacle", style="top: 40px; left: 20px;"></div>
+
+        <div class="obstacle breakable", style="top: 100px; left: 160px; background-image: url(./images/iron.jpg); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
