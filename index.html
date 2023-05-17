@@ -8,7 +8,13 @@
     <div id="game-container">
 
         <div id="sidebar">
-            <h3>Патрони</h3>
+            <h4>Гравець 1</h4>
+            <p id="lives">
+                <img id="firstHeart" src="./images/heart.png" width="20" height="20">
+                <img id="secondHeart" src="./images/heart.png" width="20" height="20">
+                <img id="thirdHeart" src="./images/heart.png" width="20" height="20">
+            </p>
+
             <p id="bulletsCounter">
                 <img id="firstBullet" src="./images/bull.png" width="20" height="30">
                 <img id="secondBullet" src="./images/bull.png" width="20" height="30">
@@ -18,8 +24,27 @@
                 <div id="loading-bar"></div>
             </div>
         </div>
+
+        <div id="sidebarSecond">
+            <h4>Гравець 2</h4>
+            <p id="lives">
+                <img id="firstHeartSecond" src="./images/heart.png" width="20" height="20">
+                <img id="secondHeartSecond" src="./images/heart.png" width="20" height="20">
+                <img id="thirdHeartSecond" src="./images/heart.png" width="20" height="20">
+            </p>
+            
+            <p id="bulletsCounter">
+                <img id="firstBulletSecond" src="./images/bull.png" width="20" height="30">
+                <img id="secondBulletSecond" src="./images/bull.png" width="20" height="30">
+                <img id="thirdBulletSecond" src="./images/bull.png" width="20" height="30">
+            </p>
+            <div id="loading-bar-containerSecond">
+                <div id="loading-barSecond"></div>
+            </div>
+        </div>
     
         <div id="tank"></div>
+        <div id="tankSecond"></div>
 
         <div class="obstacle", style="top: 240px; left: 20px;"></div>
         <div class="obstacle", style="top: 220px; left: 20px;"></div>
